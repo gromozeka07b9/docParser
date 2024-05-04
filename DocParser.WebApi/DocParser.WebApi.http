@@ -1,0 +1,11 @@
+@DocParser.WebApi_HostAddress = http://localhost:5040
+
+#GET {{DocParser.WebApi_HostAddress}}/weatherforecast/
+#Accept: application/json
+
+###
+
+POST {{DocParser.WebApi_HostAddress}}/parse/
+Accept: */*
+
+###

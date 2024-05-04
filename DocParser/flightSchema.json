@@ -1,0 +1,181 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "flights": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "departureDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "departureCity": {
+            "type": "string",
+            "default": "NONE"
+          },
+          "departureCountry": {
+            "type": "string",
+            "default": "NONE"
+          },
+          "departureTerminal": {
+            "type": "string",
+            "default": "NONE"
+          },
+          "arrivalTerminal": {
+            "type": "string",
+            "default": "NONE"
+          },
+          "arrivalDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "arrivalCity": {
+            "type": "string",
+            "default": "NONE"
+          },
+          "arrivalCountry": {
+            "type": "string",
+            "default": "NONE"
+          },
+          "departureIATA": {
+            "type": "string",
+            "default": "NONE"
+          },
+          "arrivalIATA": {
+            "type": "string",
+            "default": "NONE"
+          },
+          "airlineIATA": {
+            "type": "string",
+            "default": "NONE"
+          },
+          "flightNumber": {
+            "type": "number",
+            "default": "NONE"
+          },
+          "warningsRestrictions": {
+            "type": "string",
+            "comment": "sdfsd",
+            "default": "NONE"
+          },
+          "airlineNameByIATA": {
+            "type": "string",
+            "default": "NONE"
+          }
+        },
+        "required": [
+          "departureDateTime",
+          "departureCity",
+          "departureCountry",
+          "departureTerminal",
+          "arrivalTerminal",
+          "arrivalDateTime",
+          "arrivalCity",
+          "arrivalCountry",
+          "departureIATA",
+          "arrivalIATA",
+          "airlineIATA",
+          "flightNumber",
+          "warningsRestrictions",
+          "airlineNameByIATA"
+        ]
+      }
+    },
+    "passengers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "person": {
+            "type": "object",
+            "required": [
+              "name",
+              "surname"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "surname": {
+                "type": "string"
+              }
+            }
+          },
+          "bookingId": {
+            "type": "string",
+            "default": "NONE"
+          },
+          "ticketNumber": {
+            "type": "string",
+            "default": "NONE"
+          },
+          "PNR": {
+            "type": "string",
+            "default": "NONE"
+          },
+          "refundableStatus": {
+            "type": "boolean"
+          },
+          "bookingReference": {
+            "type": "string",
+            "default": "NONE"
+          },
+          "bookingConfirmStatus": {
+            "type": "string",
+            "default": "NONE"
+          },
+          "totalSum": {
+            "type": "number",
+            "default": 0
+          },
+          "totalCurrency": {
+            "type": "string",
+            "default": "NONE"
+          },
+          "mealType": {
+            "type": "string"
+          },
+          "cabinBaggageType": {
+            "type": "string",
+            "default": "NONE"
+          },
+          "baggageType": {
+            "type": "string",
+            "default": "NONE"
+          },
+          "insurance": {
+            "type": "string",
+            "default": "NONE"
+          },
+          "baggage": {
+            "type": "string",
+            "default": "NONE"
+          }
+        },
+        "required": [
+          "person",
+          "bookingId",
+          "ticketNumber",
+          "PNR",
+          "refundableStatus",
+          "bookingReference",
+          "bookingConfirmStatus",
+          "totalSum",
+          "totalCurrency",
+          "mealType",
+          "cabinBaggageType",
+          "baggageType",
+          "insurance",
+          "baggage"
+        ]
+      }
+    }
+  },
+  "required": [
+    "flights",
+    "passengers"
+  ]
+}

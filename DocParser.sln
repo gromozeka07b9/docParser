@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocParser", ".\DocParser\DocParser.csproj", "{A67A469A-297C-42A1-85BD-1FEC6584EB3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocParser.WebApi", ".\DocParser.WebApi\DocParser.WebApi.csproj", "{7143E17C-338C-40F7-8957-9431012BBF2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A67A469A-297C-42A1-85BD-1FEC6584EB3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A67A469A-297C-42A1-85BD-1FEC6584EB3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A67A469A-297C-42A1-85BD-1FEC6584EB3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A67A469A-297C-42A1-85BD-1FEC6584EB3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7143E17C-338C-40F7-8957-9431012BBF2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7143E17C-338C-40F7-8957-9431012BBF2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7143E17C-338C-40F7-8957-9431012BBF2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7143E17C-338C-40F7-8957-9431012BBF2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

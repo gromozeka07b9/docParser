@@ -1,0 +1,154 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "flights": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "departureDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "departureCity": {
+            "type": "string"
+          },
+          "departureCountry": {
+            "type": "string"
+          },
+          "departureTerminal": {
+            "type": "string"
+          },
+          "arrivalTerminal": {
+            "type": "string"
+          },
+          "arrivalDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "arrivalCity": {
+            "type": "string"
+          },
+          "arrivalCountry": {
+            "type": "string"
+          },
+          "departureIATA": {
+            "type": "string"
+          },
+          "arrivalIATA": {
+            "type": "string"
+          },
+          "airlineIATA": {
+            "type": "string"
+          },
+          "flightNumber": {
+            "type": "number"
+          },
+          "warningsRestrictions": {
+            "type": "string"
+          },
+          "stopover": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "string",
+            "format": "duration"
+          },
+          "airlineNameByIATA": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "departureDateTime",
+          "departureCity",
+          "departureCountry",
+          "departureTerminal",
+          "arrivalCity",
+          "arrivalCountry",
+          "departureIATA",
+          "arrivalIATA",
+          "airlineIATA",
+          "flightNumber"
+        ]
+      }
+    },
+    "passengers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "person": {
+            "type": "object",
+            "required": [
+              "name",
+              "surname"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "surname": {
+                "type": "string"
+              }
+            }
+          },
+          "bookingId": {
+            "type": "string"
+          },
+          "ticketNumber": {
+            "type": "string"
+          },
+          "passportNumber": {
+            "type": "string"
+          },
+          "PNR": {
+            "type": "string"
+          },
+          "refundableStatus": {
+            "type": "boolean"
+          },
+          "bookingReference": {
+            "type": "string"
+          },
+          "bookingConfirmStatus": {
+            "type": "string"
+          },
+          "totalSum": {
+            "type": "number",
+            "default": 0
+          },
+          "totalCurrency": {
+            "type": "string"
+          },
+          "mealType": {
+            "type": "string"
+          },
+          "cabinBaggageType": {
+            "type": "string"
+          },
+          "baggageType": {
+            "type": "string"
+          },
+          "insurance": {
+            "type": "string"
+          },
+          "baggage": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "person",
+          "bookingId",
+          "ticketNumber",
+          "PNR"
+        ]
+      }
+    }
+  },
+  "required": [
+    "flights",
+    "passengers"
+  ]
+}
